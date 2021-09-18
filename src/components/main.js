@@ -8,14 +8,14 @@ class main extends React.Component {
             main >
             <
             > {
-                this.props.data.map((post, idx) => {
+                this.props.data.map((post, indx) => {
                     return ( <
                         HornedBeasts url = { post.image_url }
                         title = { post.title }
                         description = { post.description }
                         keyword = { post.keyword }
                         horns = { post.horns }
-                        key = { idx }
+                        key = { indx }
                         showthepost = { this.props.showHandle }
                         />
                     );
