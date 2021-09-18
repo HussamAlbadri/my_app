@@ -17,6 +17,7 @@ class main extends React.Component{
             <>
                 {arr}
             </>
+
         )
     }
 }
