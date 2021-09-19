@@ -4,8 +4,8 @@ import imageCard from 'react-bootstrap/imageCard';
 import SubmitButton from 'react-bootstrap/SubmitButton';
 
 class SelectedBeast extends React.Component{
-    render(){
-        return{
+    render() {
+        return(
           <>
             <Model show={this.props.show} onHide={this.props.closeHandle} className="Model">
       
@@ -13,25 +13,23 @@ class SelectedBeast extends React.Component{
             <Model.Title> {this.props.dataClicked.title} </Model.Title>
             </Model.header>
 
-      <Model.Body>
-        <imageCard.Img variant="top" src={this.props.dataClicked.image_url} alt={this.props.dataClicked.title} className='img'/>
+           <Model.Body>
+           <imageCard.Img variant="top" src={this.props.dataClicked.image_url} alt={this.props.dataClicked.title} className='img'/>
 
-        <imageCard.Text>
-          {this.props.dataClicked.description}
-        </imageCard.Text>
+            <imageCard.Text>
+            {this.props.dataClicked.description}
+            </imageCard.Text>
         
-      </Model.Body>
+            </Model.Body>
 
-      <Model.footer>
-        <SubmitButton variant="secondary" onClick={this.props.closeHandle}>
-            Close 
-        </SubmitButton>
-      </Model.footer>
-      </Model>
-    </>
-    }
-    
-        
-    }
+            <Model.footer>
+            <SubmitButton variant="secondary" onClick={this.props.closeHandle}></SubmitButton>
+             </Model.footer>
+             </Model>
+             
+             </>
+      );
+          
+  }
 }
 export default SelectedBeast;
