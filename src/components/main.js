@@ -4,10 +4,9 @@ import data from './data.json';
 
 class main extends React.Component {
     render() {
-        return ( <
-            main >
-            <
-            > {
+        return (
+            <> 
+            {
                 this.props.data.map((post, indx) => {
                     return ( <
                         HornedBeasts url = { post.image_url }
@@ -18,12 +17,11 @@ class main extends React.Component {
                         key = { indx }
                         showthepost = { this.props.showHandle }
                         />
-                    );
-                })
-            } <
-            /> < /
-            main >
-        );
+                        );
+                    })
+                } 
+            </> 
+                );
     }
 }
-export default main;
+                export default main;
